@@ -8,7 +8,7 @@ while (i<=10) {
     i++;
 }
 
-let j=0;
+let j=10;
 do {
     console.log(j)
     j++;
