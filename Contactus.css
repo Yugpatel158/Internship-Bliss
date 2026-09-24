@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f5f7;
+}
+
+nav ul {
+    list-style-type: none;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    font-size: 20px;
+    margin: auto;
+    background-color: lightblue;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+nav ul li a {
+    padding: 20px;
+    text-decoration: none;
+    color: #222;
+}
+
+.container{
+    display: flex;
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: none;
+    padding: 0;
+    height: auto;
+    text-align: left;
+}
+
+.contact-image{
+    flex: 1;
+    background-image: url('https://placehold.co/400x520?text=Contact+Us');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    min-height: 520px;
+}
+
+.contact-image::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+
+.contact-image .quote{
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.contact-form-panel{
+    flex: 1;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+;
+}
+
+.contact-form-panel legend{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 0 0 8px 0;
+    color: #1a1a2e;
+}
+
+.contact-form-panel .subtitle{
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+}
+
+.contact-form-panel label{
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.contact-form-panel input[type="text"],
+.contact-form-panel input[type="email"],
+.contact-form-panel textarea{
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #d9dce1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background-color: #fafbfc;
+}
+
+.contact-form-panel textarea{
+    min-height: 90px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.contact-form-panel input:focus,
+.contact-form-panel textarea:focus{
+    outline: none;
+    border-color: #6d5ef8;
+    background-color: #ffffff;
+}
+
+.gender-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.gender-group label{
+    display: inline;
+    font-weight: 400;
+    margin: 0;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: #6d5ef8;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover{
+    background-color: #5a4ce0;
+}
+
+@media(max-width:700px) {
+    .container{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .contact-image{
+        min-height: 220px;
+    }
+}

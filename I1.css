@@ -1,0 +1,28 @@
+.title{
+    text-align: center;
+    color: #2521a4;
+}
+
+.h1{
+    font-size: 2em;
+    color: #cc2121;
+    text-align: center;
+
+}
+
+.container {
+  display: flex;
+  background-color: DodgerBlue;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center; 
+  /* justify-content: center; */
+}
+
+.container div {
+  background-color: #e01919;
+  margin: 10px;
+  padding: 20px;
+  font-size: 24px;
+}

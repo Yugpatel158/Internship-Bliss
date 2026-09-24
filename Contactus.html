@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contactus.css">
+</head>
+
+<body>
+    <nav>
+        <ul
+            style="list-style-type: none; height: 50px; text-align: center; display: flex; justify-content: right; padding: 10px; font-size: 20px; margin:auto; background-color: lightblue; margin-bottom: auto; width: 100%;">
+            <li><a href="#" style="padding: 20px;">Link</a></li>
+            <li><a href="Home.html" style="padding: 20px;">Home</a></li>
+            <li><a href="Aboutus.html" style="padding: 20px;">About Us</a></li>
+            <li><a href="Contactus.html" style="padding: 20px;">Contact Us</a></li>
+        </ul>
+        <div class="container">
+
+            <div class="contact-image">
+                <div>
+                    <img src="Tbs.jpeg" alt="Contact Us Image">
+                    <p class="quote">"We'd love to hear from you — reach out anytime."</p>
+                </div>
+                <!-- <p class="quote">"We'd love to hear from you — reach out anytime."</p> -->
+            </div>
+
+            <div class="contact-form-panel">
+                <form>
+                    <legend>Contact Us</legend>
+                    <p class="subtitle">Fill in the form below and we'll get back to you</p>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter your message" name="message"></textarea>
+
+                    <label>Gender</label>
+                    <div class="gender-group">
+                        <span><input type="radio" id="male" name="gender" value="male" required> <label
+                                for="male">Male</label></span>
+                        <span><input type="radio" id="female" name="gender" value="female"> <label
+                                for="female">Female</label></span>
+                    </div>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
