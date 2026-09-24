@@ -2,7 +2,7 @@ for (let i = 0; i <=11 ; i++) {
     console.log(i);    
 }
 
-let i=0;
+let i=10;
 while (i<=10) {
     console.log(i);
     i++;
