@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    overflow: auto;  
+    height: fit-content; 
+    width: 100%;
+    justify-content: center;
+}
+.navtext{
+    font-size: 30px;
+}
+.navt{
+    margin: 0;
+    font-size: 14px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    background-color: rgb(221, 234, 242);
+    border-radius: 5px;
+    width: auto;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    justify-content: space-between;
+    padding: 0 15px;
+    list-style: none;
+
+}
+section.sec1{
+    height: 80vh;
+    padding: 20px;
+    z-index: -1;
+    background-image: url("scott-webb-_K-QKkbn7Ds-unsplash.jpg");
+    background-size:cover ;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: left;
+    font-size: 50px;
+    margin-top: 10px;
+}
+p.main{
+    text-align: left;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    font-size: 17px;
+    margin: 0 55px;
+}
+pre{
+    font-family: 'DM Serif Display';
+    margin: 0px;
+    justify-content: left;
+    padding: 0;
+}
+button{
+    justify-content: center;
+    text-align: left;
+    margin: 15px 60px;
+    padding: 15px 30px;
+    background-color: aliceblue;
+    opacity: 0.8;
+    border-radius: 5px;
+    border: solid 0.5px rgb(135, 147, 153);
+}
+span{
+    margin-left: 5px;
+    font-size: 18px;
+}
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+section.sec2{
+    font-size: 20px;
+    justify-self: center;
+    justify-content: space-between;
+    
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    padding: 20px 30px ; 
+    height: fit-content;
+    background-color: rgba(197, 226, 244,0.5);
+    border-radius: 15px;
+    margin: -40px ;
+    font-size: 20px;
+    z-index: 2;
+    position: sticky;
+    backdrop-filter: blur(10px);
+}
+
+.about {
+    height: fit-content;
+    display: flex;
+    z-index: -1;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: justify;
+    word-spacing: 8px;
+    font-size:16px;
+}
+.para{
+    padding: 20px;
+    padding-right: 30px;
+}
+.abouth1{
+    padding: 0 10px;
+    justify-self: start;
+}
+.abouth3{
+    padding-bottom: 25px;
+    justify-self: start;
+}
+.phone,
+.add,
+.mail{
+    display: flex;
+
+}
+
+.sec3{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    backdrop-filter: blur(5px);
+    height: fit-content;
+    width: 100%;
+    padding: 30px;
+}
+
+.resideve,
+.commdeve,
+.investor{
+    text-align: center;
+    height: fit-content;
+    margin: 20px 10px;
+    padding: 30px;
+    word-spacing: 4px;
+    font-size:16px;
+}
+
+.ftr{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    height: fit-content ;
+}
+
+.abus,
+.coin,
+.usli,
+.nele{
+    display: flex;
+    flex-direction: column;
+}
